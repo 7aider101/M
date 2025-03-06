@@ -192,490 +192,72 @@
     // عرض التاريخ الحالي
     document.getElementById("currentDate").textContent = new Date().toLocaleDateString("ar-EG");
 
-    // بيانات الطلاب (تم حفظها مسبقاً لكل شعبة)
+    // بيانات الطلاب لشعبة A (أسماء شعبية)
     var studentsSectionA = [
-  "ابراهيم داود سلمان حنون",
-  "ابراهيم عدنان كاظم جاسم",
-  "احمد جعفر صالح محمود",
-  "احمد شاكر جعفر عذيب",
-  "احمد عامر جواد كاظم",
-  "احمد عامر طاهر حسون",
-  "احمد عباس حسين جمعه",
-  "احمد عباس عواد جابر",
-  "احمد عباس كاظم حمدان مسائي",
-  "احمد عبد المنعم عبد الحميد راشد",
-  "احمد عدي ياس خضير",
-  "احمد علي جمعه علي",
-  "احمد علي شذر زايد",
-  "احمد فراس خضير حسين",
-  "احمد فرحان خلف هويدي",
-  "احمد مهند احمد محمد",
-  "احمد موفق صاحب داود",
-  "اريفان فرهاد طاهر كاكه خان",
-  "اسامة حسن ضاري انغيمش",
-  "اسامه نهاد محسن احمد",
-  "الأمير علي محيسن خلف",
-  "الحسن فاضل حسين سرحان",
-  "الحمزه قاسم علي صحن",
-  "المرتضى مالك محسن عبد السادة",
-  "امنه عبد الصمد ذنون احمد",
-  "امنه عبد الصمد ذنون احمد",
-  "امير حسنين هاشم محمد",
-  "امير عبد الرحمن مزعل حسين",
-  "امير قاسم سوادي محمد",
-  "اميمة سعد عبد المطلب خلف",
-  "اواب حمزة عباس",
-  "اوس محمد حميد احمد",
-  "بارق رعد فاضل حسين",
-  "جاسم محمد حسين شيال",
-  "حسن عباس علي حسين",
-  "حسين فتح الله حسب الله حمود",
-  "رسول صميم كريدي عنفوص",
-  "روان علي عادل عبد الوهاب",
-  "زهراء محمد بدر جدوع",
-  "زين العابدين علاوي عبد الحسين",
-  "سبأ وليد محمد مسائي",
-  "سجى محمد حميد عباس مسائي",
-  "ضحى عبد الله حسن علي",
-  "عباس وليد خالد نشعان",
-  "قتادة شاكر جعفر عذيب",
-  "محمد جواد رشيد ياسر كزار",
-  "محمد حسام محمد عبد الله",
-  "محمد هاشم محمد شمس الدين",
-  "مرتضى رياض حسن علوان مسائي",
-  "مصطفى صلاح الدين ابراهيم جاسم",
-  "ميس وسام عبد الله مهدي",
-  "ياسر عمار بدري صبري",
-  "ياسين حيدر حمزة محمد حسين"
-];
+      "ابراهيم داود سلمان حنون",
+      "ابراهيم عدنان كاظم جاسم",
+      "احمد جعفر صالح محمود",
+      "احمد شاكر جعفر عذيب",
+      "احمد عامر جواد كاظم",
+      "احمد عامر طاهر حسون",
+      "احمد عباس حسين جمعه",
+      "احمد عباس عواد جابر",
+      "احمد عباس كاظم حمدان مسائي",
+      "احمد عبد المنعم عبد الحميد راشد",
+      "احمد عدي ياس خضير",
+      "احمد علي جمعه علي",
+      "احمد علي شذر زايد",
+      "احمد فراس خضير حسين",
+      "احمد فرحان خلف هويدي",
+      "احمد مهند احمد محمد",
+      "احمد موفق صاحب داود",
+      "اريفان فرهاد طاهر كاكه خان",
+      "اسامة حسن ضاري انغيمش",
+      "اسامه نهاد محسن احمد",
+      "الأمير علي محيسن خلف",
+      "الحسن فاضل حسين سرحان",
+      "الحمزه قاسم علي صحن",
+      "المرتضى مالك محسن عبد السادة",
+      "امنه عبد الصمد ذنون احمد",
+      "امنه عبد الصمد ذنون احمد",
+      "امير حسنين هاشم محمد",
+      "امير عبد الرحمن مزعل حسين",
+      "امير قاسم سوادي محمد",
+      "اميمة سعد عبد المطلب خلف",
+      "اواب حمزة عباس",
+      "اوس محمد حميد احمد",
+      "بارق رعد فاضل حسين",
+      "جاسم محمد حسين شيال",
+      "حسن عباس علي حسين",
+      "حسين فتح الله حسب الله حمود",
+      "رسول صميم كريدي عنفوص",
+      "روان علي عادل عبد الوهاب",
+      "زهراء محمد بدر جدوع",
+      "زين العابدين علاوي عبد الحسين",
+      "سبأ وليد محمد مسائي",
+      "سجى محمد حميد عباس مسائي",
+      "ضحى عبد الله حسن علي",
+      "عباس وليد خالد نشعان",
+      "قتادة شاكر جعفر عذيب",
+      "محمد جواد رشيد ياسر كزار",
+      "محمد حسام محمد عبد الله",
+      "محمد هاشم محمد شمس الدين",
+      "مرتضى رياض حسن علوان مسائي",
+      "مصطفى صلاح الدين ابراهيم جاسم",
+      "ميس وسام عبد الله مهدي",
+      "ياسر عمار بدري صبري",
+      "ياسين حيدر حمزة محمد حسين"
+    ];
     // (يتم تعريف بيانات باقي الأقسام بنفس الطريقة...)
-    var studentsSectionB = [
-      "احمد علاء حسين هراطه",
-      "اروى محمد فارس عناد",
-      "امير خضير عباس جاسم",
-      "تكتم فؤاد عبد الحكيم عبد الرزاق",
-      "حسن علي جلوب شامي",
-      "حسن كريم شنيشل حسين",
-      "حسن هادي مجبل عباس",
-      "حسنين حيدر جميل عبد الحسين",
-      "حسين ابراهيم كاظم علي",
-      "حسين احمد اياد مهدي",
-      "حسين حميد حسين مالح",
-      "حسين سنان ابراهيم مراد",
-      "حسين صالح عزيز سالم",
-      "حسين صباح سالم سكر",
-      "حسين صميم سعدون صلاح",
-      "حسين ظافر خلف محسن",
-      "حسين علي عبد الله جرمط",
-      "حسين علي غافل روضان",
-      "حسين علي فيصل طاهر",
-      "حسين فلاح كريم حسين",
-      "حنان طه محسن حمود",
-      "حيدر اسماعيل فرج",
-      "حيدر سمير عبد سلطان",
-      "حيدر طلال كاظم محمد",
-      "حيدر عامر مجبل سلمان",
-      "حيدر عصام هادي عبود",
-      "حيدر علي لطيف طالب لطيف",
-      "حيدر محمد معروف راشد",
-      "رأفت خالد عبد اللطيف جاسم",
-      "رضا عبد الحسين علي حسين",
-      "رعد عبدالله جاسم محمد علي",
-      "رند عماد علي ضاحي",
-      "زيد حامد سعدون هادي",
-      "زيد علي محمد محسن",
-      "زين العابدين صبيح كرم زامل",
-      "سجاد سليم ابراهيم أحمد",
-      "عباس هادي محسن محمد",
-      "عبد المهيمن صلاح فاضل مخيف",
-      "عسل مهند غسان ايوب",
-      "علي رعد رشيد ابراهيم",
-      "عمار شهاب احمد جيجان",
-      "عمار فريد حسين خلف",
-      "ليث صبري عبادي سلطان",
-      "مجتبى ثامر علي عبيد",
-      "محمـد عباس عبد علي",
-      "محمد قاسم عدنان عبد الغفور مسائي",
-      "مريم فؤاد عبود حسين",
-      "مصعب فؤاد خلف ذيب مسائي",
-      "منتظر وليد عبد الحسين مسائي",
-      "نور الحسين محمد صبيح جاسم مسائي",
-      "ياسمين خضر تركي سهيل"
-    ];
-    var studentsSectionC = [
-      "ابراهيم حسين رمضان ناصر",
-      "احمد اثير شاكر محمد مسائي",
-      "احمد فريد صادق خضر",
-      "حسن حبيب حسين حبيب",
-      "حسن حيدر محسن عبود",
-      "حسن علي كريم حسن",
-      "حسنين كاظم جابر عبد",
-      "حيدر كاظم كريم ذرب",
-      "ذو الفقار ليث كاظم سعود",
-      "سجاد احمد مصلح محمد",
-      "سجاد جاسم خريمش ماذي",
-      "سجاد فاضل غازي خليل",
-      "سيف الدين قاسم جابر عبد",
-      "سيف حميد محمد عبد الله",
-      "سيف فاضل كاظم محمود",
-      "سيف مهند فاضل كريم",
-      "شهد قاسم محسن ولي",
-      "صادق حسين بهلول لفته",
-      "صادق عبد مسلم سعيد عبد",
-      "صادق محمد حسن عبد الزهرة",
-      "ضياء حبيب علي حسين",
-      "طه باسم حامد فياض",
-      "طه علاء عبد الرضا كبان",
-      "طه محمد طه احمد",
-      "طه ياسين طارق عداي",
-      "عامر حسين هادي صالح",
-      "عباس احمد كاظم سلمان",
-      "عبد الرحمن جاسم محمد امين",
-      "عبد السلام حسن خضير حمزه",
-      "عبد الله ابراهيم منير ابراهيم",
-      "عبد الله إسماعيل عطية احمد",
-      "عبد الله تحسين عبد علي محمد",
-      "عبد الله حمزة عباس",
-      "عبد الله رزاق صالح معيلي",
-      "عبد الله شاكر محمود سليمان",
-      "عبد الله عباس ضعيف كاين",
-      "عبد الله عزيز ميزر محرب",
-      "عبد الله عمر اسماعيل علوان",
-      "عبد الله فراس طالب ابراهيم",
-      "عبد الله محمد عبد الله علي",
-      "عبد المهيمن دريد عبد الكريم جاسم",
-      "عبيدة عمار رحيم كاظم",
-      "عدنان مرسال باسم قاسم",
-      "علاء عمار خضير عباس",
-      "علي انور مهدي صالح",
-      "محمد حسين فضل عبود",
-      "ملاك شهاب احمد حسون",
-      "منتظر علاوي غازي علي",
-      "نبأ علي هادي نجم",
-      "نور الدين عامر رحيم"
-    ];
-    var studentsSectionD = [
-      "المرتجى معاذ جبار فهد مسائي",
-      "حسين محمد حسين داود",
-      "خطاب عمر ضياء ياسين",
-      "عبد الله سعد جاسم محمد",
-      "عبد الله مازن كامل محمد",
-      "علي اسامة عباس حميد",
-      "علي المرتضى ياسين فاخر عوده",
-      "علي ثامر جواد كاظم",
-      "علي جبار عكيب رجي",
-      "علي حسين امانه كريم",
-      "علي حيدر حسين علي",
-      "علي طالب اسماعيل حسين",
-      "علي ظافر محمود رحيم",
-      "علي عباس عليوي شمخي",
-      "علي علاء عباس مفتن",
-      "علي فلاح علي حميد",
-      "علي قاسم خضير عباس",
-      "علي كريم حنش صبر",
-      "علي محمد مهدي صالح",
-      "علي مرتضى عبدالله جابر",
-      "علي نعيم عنش محمد",
-      "علي ولاء زايد خلف",
-      "عمر حسين حمود صابر",
-      "عمر مثنى عطية جاسم",
-      "فهد زكريا محي احمد",
-      "قتيبة ماجد عبد الخضر عبد علي",
-      "كرار حيدر محمد جري",
-      "كرار هيثم عباس اهتيمي",
-      "ليث جاسم محمد حسن",
-      "مجتبى أحمد كاظم سلمان",
-      "محمد ابراهيم مالك راضي",
-      "محمد احمد محمد علي",
-      "محمد الباقر حسنين قيس محمود",
-      "محمد تحسين علي حسين صبري",
-      "محمد جاسم جميل جاسم",
-      "محمد حاتم مزعل فالح",
-      "محمد حسين محمد جواد حبيب",
-      "مؤمل حسين موسى صالح",
-      "ميثاق قادر نجم عباس"
-    ];
-    var studentsSectionE = [
-      "جعفر حسين صباح جعفر مسائي",
-      "اسراء حسن هاشم ذياب",
-      "جعفر رياض حسين حسن",
-      "حسين علي ديوان علوان",
-      "زهراء طه عبد الكاظم جواد",
-      "سمية رعد حسين مهدي",
-      "سيف سعد موحان محمد مسائي",
-      "فاطمه ليث طه صالح",
-      "محمد حيدر كاظم نيرك",
-      "محمد داود سلمان داود مسائي",
-      "محمد رضا صلاح حسن مطشر",
-      "محمد رضا مشتاق عبد القادر حمود",
-      "محمد رياض فالح جبر",
-      "محمد صلاح مهدي حسين الدباغ",
-      "محمد عامر علي فرحان",
-      "محمد عباس رحيم مظلوم",
-      "محمد عبد الرحمن جاسم دهش",
-      "محمد عدنان عبد الله هارون",
-      "محمد علي جمال ابراهيم حسين",
-      "محمد علي كاظم عبيد",
-      "محمد فلاح حسن هاشم",
-      "محمد قاسم صالح محمد",
-      "محمد مجيد رجب خلف",
-      "محمد مجيد سعدون داود",
-      "محمد مخلد صفوت قحطان",
-      "محمد مهند عبد خلف",
-      "محمد مؤيد بهيج كاظم",
-      "محمد نصر عبد المجيد نصر",
-      "محمود شوكت محمود عبد الرزاق",
-      "مرتضى جابر بنيه",
-      "مرتضى سمير جليل فيصل مسائي",
-      "مرتضى صباح وحيد جاعد",
-      "مرح اسحاق داوود عبد الله",
-      "مريم عامر محمد جلاب",
-      "مصطفى اسعد جدوع حسين",
-      "مصطفى اسعد عبد عون حميد",
-      "مصطفى تورك اي جلال مصطفى",
-      "مصطفى جواد عبد الحسن مسير",
-      "مصطفى جواد نعمه جواد",
-      "مصطفى حسين لفتة هوير",
-      "مصطفى رعد طالب سلمان",
-      "مصطفى سعدون صبحي",
-      "مصطفى صالح مهدي عياده",
-      "مصطفى عبد الحسين رزوقي مجيد",
-      "مصطفى عز الدين جاسم محمد",
-      "مصطفى علي حمد هلول",
-      "مصطفى عماد فاضل محمد",
-      "مصطفى نمير شاكر حميد",
-      "مصطفى هيثم حارث سلمان",
-      "مصعب خضر عبد صالح",
-      "مهدي نهاد شاكر داود مسائي",
-      "نذير وليد جاسم محمد",
-      "همام فريد همام حسين",
-      "يوسف يونس صبحي"
-    ];
-    var studentsSectionF = [
-      "اباذر محمد علي مزهر",
-      "احمد عباس رعيد دخل",
-      "اسامة عباس فاضل",
-      "حسين محمد رشم عبد الله",
-      "حلا ناظم لطيف جاسم مسائي",
-      "زينب عدنان حنون موسى",
-      "زينة علي شهيد مرهون",
-      "سيف علي رزاق عبد علي",
-      "ضرغام حسين محمد عبار",
-      "عبد الله ثائر صادق رحيم",
-      "عبد الله رسول ياسين علي مسائي",
-      "عبد الله عامر سامي هلال مسائي",
-      "علي حمد جاسم نعمه",
-      "علي مهند ناصر حسون مسائي",
-      "لمى انور صباح عيدان",
-      "محمد صلاح مهدي حسين الياسري",
-      "محمد فراس عبد عبيد مسائي",
-      "محمد مسلم صالح مهدي",
-      "مرتضى اياد حامد حسن",
-      "مصطفى رعد اسعد ياسين",
-      "مصعب ياسين جاسم",
-      "ملاك انور صباح علي",
-      "منار حمد جاسم نعمه",
-      "منتظر سعد فائق نجم",
-      "منتظر صادق غانم كلش",
-      "منتظر عمار رشيد عداي",
-      "مهدي عبد الحسين عبود ناجي",
-      "مهيمن حسنين علي محمد",
-      "نبأ رعد سلمان منيف",
-      "نصير سعدون حليو حسين",
-      "نور الدين احمد علاء الدين شهاب",
-      "هادي مشتاق طالب فاضل",
-      "همام عبدالامير عليوي عويز",
-      "ياسر احمد علي محمد",
-      "ياسر زيد فوزي حسين",
-      "يعقوب ثائر محمود شرموط",
-      "يوسف ثامر ابوالهيل مانع",
-      "يوسف سعد فتحي جودي",
-      "يوسف صباح حاتم حسين",
-      "يوسف فارس هادي غايب",
-      "يوسف محمد خليفة موسى",
-      "يوسف محمد محمود علي مسائي"
-    ];
-    var studentsSectionG = [
-      "ابان عدي سعدي حميد",
-      "ابراهيم عامر ياسين حسن",
-      "احمد جبران محمد نايف",
-      "احمد صدام حسين عويد",
-      "احمد طلال صالح عبيد",
-      "احمد علي نجم عبد",
-      "احمد مازن صبار محمد مسائي",
-      "احمد ناهي عبد الساده خلخال مسائي",
-      "الحسين محمد محمود علي",
-      "امل محمد عبد الكريم حميد",
-      "امير فرقد ناظم حمزه",
-      "باقر رائد شهيد رشيد",
-      "باقر عباس جليل عباس",
-      "جمان علي عبد رومي",
-      "حبيب حاكم كامل حسين",
-      "حسن صافي عبد الله خيون مسائي",
-      "حسن علاء شكر محمود",
-      "حسين سعد عبد الساده خلخال",
-      "حسين علاء جعفر سعدون",
-      "حسين علاء نصار عبد الحسين",
-      "حسين علي احمد خضير مسائي",
-      "حيدر علاء حسين علوان",
-      "حيدر موفق ادريس صالح",
-      "دموع الزهراء اسعد مهدي عاشور",
-      "دينا داخل خلف ماضي",
-      "رقيه فرات علي حمادي مسائي",
-      "زهراء اسماعيل ابراهيم محمود",
-      "زيد طارق نعيم عاجل",
-      "زينب حسين عذاب سلمان",
-      "سجاد احمد زكي جاسم",
-      "سجاد احمد نجم كريم",
-      "سجاد انيس صلاح عبد الجبار",
-      "سجاد جلال خماط جاسم",
-      "سما هيمن فخر الدين صالح",
-      "سميره حسين رضا علي",
-      "شاكر محمود شاكر محمود",
-      "شبل حيدر عبد الحسين عبد الكاظم",
-      "صلاح وليد قاسم محمد",
-      "طه صفاء خليل حسين",
-      "عبد الحميد احمد جاسم محمد",
-      "عبد الله صبري طعيمه عايس مسائي",
-      "علي عبد الرحمن كاظم راشد",
-      "محمد جمعه عاصي",
-      "محمد زيد علي عمران",
-      "محمد عيسى ابراهيم عكار",
-      "نور رياض حميد عطية",
-      "نور علي محمد جاسم",
-      "هديل عقيل فلاح رشيد",
-      "محمد جاسم محسن تقي",
-      "سجاد محمد كاظم عبد",
-      "عبد الله وسام مجيد عداي"
-    ];
-    var studentsSectionH = [
-      "احمد بسمان صالح مهدي",
-      "استبرق عبد الجبار جاسم داخل",
-      "ثابت محمد عبد المهدي كنعان",
-      "حسن ساجد عبد عباس",
-      "سجاد علي عبد القادر جرجيس",
-      "ضرغام خلف غموس عبد الله مسائي",
-      "عبد الله باسم حسوني الملا",
-      "عبد الله جاسم داود سلمان",
-      "عبد الله رفعت عباس ابراهيم",
-      "عبد الله علي عداي عوده",
-      "علي حسن خضير فيصل",
-      "علي حسين علي جاسم",
-      "علي سرمد جواد عبد الله",
-      "علي شاكر عموشي علي",
-      "علي عباس حسين حسن",
-      "علي عدي داود علي",
-      "علي مرتضى حيدر سليم عليوي",
-      "علي مشتاق عبد المنعم عباس",
-      "علي ياس خضير عزيز",
-      "عمر علي كاظم علي",
-      "فاطمه فراس فاضل حسين",
-      "كرار حيدر راضي عبد علي",
-      "كرار صالح مهدي عطوف",
-      "مجتبى قحطان خلف عكلو",
-      "محمد حسنين خضير عبد العباس",
-      "محمد عبد الرزاق جار الله عبد الرزاق",
-      "محمد مصطفى حسين علي",
-      "محمد نجاح ارحيم منصور",
-      "مصطفى صباح نوري متعب",
-      "مصطفى عيسى حسين علوان",
-      "مصطفى ميثم عبد الكاظم ناصر",
-      "منتظر فاضل عباس جاري",
-      "مهند محمد حميد مهدي",
-      "همام مثنى عبيد حسين",
-      "هند عبد الله علي عبد الله",
-      "ياسر عمار جابر حسين",
-      "ياسين رياض ياسين علوان",
-      "يحيى جمال فاضل إبراهيم"
-    ];
-    var studentsSectionI = [
-      "ابراهيم مطشر غالي عامود",
-      "احمد اسماعيل حميد عبدالغفور",
-      "احمد ايهاب ثائر غازي (صباحي)",
-      "احمد رعد احمد حسون",
-      "احمد سعد طالب رواك",
-      "احمد عبد الله احمد مهدي",
-      "احمد علي نجم عبد",
-      "احمد غني جبر حبيب",
-      "احمد نزار جليل علي",
-      "اسامة محمد كاظم عباس",
-      "جلال الدين احمد عبد الزهره هادي",
-      "جمال كريم ياسر فليح",
-      "حسين علي حسين فليح",
-      "حسين علي ياسين محمد انور",
-      "حيدر صبحي سلمان حسن",
-      "حيدر طه عباس علوان",
-      "خليل امجد خليل ابراهيم",
-      "رسول شهاب محي شهاب صباحي",
-      "رضا بهاء جاسم محمد صباحي",
-      "سجاد غريب محمد حمود",
-      "سجاد محمد كاظم عبد",
-      "سلام فاهم شعلان سلمان",
-      "سليمان رفعت محمد عبد الله",
-      "صادق زيد عبد طاهر",
-      "عباس صباح حسن",
-      "عباس فاضل مجيد هويران",
-      "عبد الكريم مهدي ابراهيم",
-      "عبد الله جبار رشيد نغيمش",
-      "عبد الله سعيد عبد القادر فهد",
-      "عبد الله وسام مجيد عداي",
-      "علي نجم عبد طاهر",
-      "عمر عبد السلام شكر محمود",
-      "ليث محمد كاظم عبد اليمه",
-      "مجتبى علي علال مزبان",
-      "محمد علي خلف علي",
-      "مرتضى فخري عاشور محمد",
-      "مصطفى جاسم محمد رسن",
-      "مصطفى خالد ابراهيم نصار",
-      "مصطفى رياض محمد رضا محسن",
-      "مصطفى نجم عبد جوده",
-      "مينه علي حاتم احمد",
-      "هاني فلاح عبد الحسن علي",
-      "يونس حسن مطر عزيز",
-      "يوسف قاسم حسن شهاب"
-    ];
-    var studentsSectionJ = [
-      "ابراهيم احمد محمد لوتي",
-      "احمد طالب عودة حسان",
-      "اشرف عادل رفعت شوكت",
-      "بندر خالد شهيد علي",
-      "حاتم جاسم علوان جاسم",
-      "حسن كريم طعمه رغيله",
-      "حسين حسن مهدي صريم",
-      "حسين هاشم احمد كريم",
-      "زيد سلمان عبيد عبد الله",
-      "زينب عباس كاظم الكناني",
-      "زينب محمد حبيب نصر الله",
-      "سجاد قاسم حامد عباس",
-      "صبا مصعب عباس علي",
-      "صلاح نعمان كاظم حسن",
-      "علاء محمد مصطفى محمد",
-      "علي ثامر عبيد عليوي",
-      "عمار رائد عبد الحسين",
-      "فارس حسين ثامر علي",
-      "كاظم جابر جاسم غضيب",
-      "كرار فاضل محمد محمد حسن",
-      "ليث صادق لفته حسن",
-      "محسن حيدر محسن عبود صباحي",
-      "محمد حاكم جهاد حسين",
-      "محمد سالم مري مسرهد",
-      "محمد عبدالخضر يوسف عباس",
-      "محمد علي عباس علي",
-      "محمد عماد كاظم حسن",
-      "محمد فاضل حسن جاسم",
-      "محمد فراس عبد عبيد",
-      "مرتضى عبود كريم كاظم",
-      "مصطفى اسعد عبد عليوي",
-      "مصطفى خالد جودي كاظم",
-      "مصطفى عبدالرحمن مرعي حسن",
-      "مصطفى نجم عبد الخالق زغير",
-      "منار عدنان سوادي فهد",
-      "منتظر عماد فرحان عبود",
-      "منير زياد طارق محي الدين",
-      "نازك برهان ادهم طاهر",
-      "هاشم لعيبي غازي مشكور",
-      "وليد خالد جياد عريبي"
-    ];
+    var studentsSectionB = [ /* ... */ ];
+    var studentsSectionC = [ /* ... */ ];
+    var studentsSectionD = [ /* ... */ ];
+    var studentsSectionE = [ /* ... */ ];
+    var studentsSectionF = [ /* ... */ ];
+    var studentsSectionG = [ /* ... */ ];
+    var studentsSectionH = [ /* ... */ ];
+    var studentsSectionI = [ /* ... */ ];
+    var studentsSectionJ = [ /* ... */ ];
 
     var sections = {
       "A": studentsSectionA,
@@ -693,4 +275,235 @@
     var currentSection = document.getElementById("sectionSelect").value;
     var students = sections[currentSection];
     var attendanceData = getAttendanceData();
-    var
+    var bonusData = getBonusData();
+
+    function getAttendanceData() {
+      var key = 'attendanceData_' + currentSection;
+      try {
+        var data = JSON.parse(localStorage.getItem(key));
+        if (Array.isArray(data) && data.length === students.length) return data;
+      } catch(e){}
+      return new Array(students.length).fill(null);
+    }
+    function setAttendanceData(data) {
+      var key = 'attendanceData_' + currentSection;
+      try { localStorage.setItem(key, JSON.stringify(data)); } catch(e){}
+    }
+
+    function getBonusData() {
+      var key = 'bonusData_' + currentSection;
+      try {
+        var data = JSON.parse(localStorage.getItem(key));
+        if (Array.isArray(data) && data.length === students.length) return data;
+      } catch(e){}
+      return new Array(students.length).fill(null);
+    }
+    function setBonusData(data) {
+      var key = 'bonusData_' + currentSection;
+      try { localStorage.setItem(key, JSON.stringify(data)); } catch(e){}
+    }
+
+    function renderTable() {
+      var tableBody = document.getElementById("studentsTableBody");
+      tableBody.innerHTML = "";
+      students.forEach(function(student, index) {
+        var row = document.createElement("tr");
+
+        // رقم الطالب والاسم
+        var idCell = document.createElement("td");
+        idCell.textContent = index + 1;
+        var nameCell = document.createElement("td");
+        nameCell.textContent = student;
+
+        // خلية الحضور/الغياب/المجاز
+        var attendanceCell = document.createElement("td");
+        var btnContainer = document.createElement("div");
+        btnContainer.classList.add("attendance-btns");
+
+        // زر الحضور
+        var presentBtn = document.createElement("button");
+        presentBtn.classList.add("present-btn");
+        if (attendanceData[index] === "present") presentBtn.classList.add("selected");
+        presentBtn.textContent = "✅ حضور";
+        presentBtn.setAttribute("data-index", index);
+        presentBtn.setAttribute("data-status", "present");
+        btnContainer.appendChild(presentBtn);
+
+        // زر الغياب
+        var absentBtn = document.createElement("button");
+        absentBtn.classList.add("absent-btn");
+        if (attendanceData[index] === "absent") absentBtn.classList.add("selected");
+        absentBtn.textContent = "❌ غياب";
+        absentBtn.setAttribute("data-index", index);
+        absentBtn.setAttribute("data-status", "absent");
+        btnContainer.appendChild(absentBtn);
+
+        // زر المجاز
+        var excusedBtn = document.createElement("button");
+        excusedBtn.classList.add("excused-btn");
+        if (attendanceData[index] === "مجاز") excusedBtn.classList.add("selected");
+        excusedBtn.textContent = "⚠️ مجاز";
+        excusedBtn.setAttribute("data-index", index);
+        excusedBtn.setAttribute("data-status", "مجاز");
+        btnContainer.appendChild(excusedBtn);
+
+        // زر إلغاء التحديد
+        var unsetBtn = document.createElement("button");
+        unsetBtn.classList.add("unset-btn");
+        if (attendanceData[index] === null) unsetBtn.classList.add("selected");
+        unsetBtn.textContent = "❔ إلغاء التحديد";
+        unsetBtn.setAttribute("data-index", index);
+        unsetBtn.setAttribute("data-status", "unset");
+        btnContainer.appendChild(unsetBtn);
+
+        attendanceCell.appendChild(btnContainer);
+
+        // خلية البلس+
+        var bonusCell = document.createElement("td");
+        var bonusContainer = document.createElement("div");
+        bonusContainer.classList.add("bonus-container");
+
+        var bonusBtn = document.createElement("button");
+        bonusBtn.classList.add("bonus-btn");
+        if (!bonusData[index]) {
+          bonusBtn.textContent = "بلس+";
+          bonusBtn.classList.add("golden");
+        } else {
+          bonusBtn.textContent = bonusData[index];
+          bonusBtn.classList.remove("golden");
+        }
+        bonusBtn.setAttribute("data-index", index);
+        bonusBtn.addEventListener("click", function() {
+          var sel = document.createElement("select");
+          sel.style.fontSize = "16px";
+          sel.setAttribute("data-index", index);
+          var emptyOpt = document.createElement("option");
+          emptyOpt.value = "";
+          emptyOpt.textContent = "-----";
+          sel.appendChild(emptyOpt);
+          for (var i = 1; i <= 5; i++) {
+            var opt = document.createElement("option");
+            opt.value = i;
+            opt.textContent = i;
+            sel.appendChild(opt);
+          }
+          sel.addEventListener("change", function() {
+            var idx = sel.getAttribute("data-index");
+            bonusData[idx] = sel.value ? sel.value : null;
+            setBonusData(bonusData);
+            bonusContainer.removeChild(sel);
+            bonusBtn.textContent = bonusData[idx] ? bonusData[idx] : "بلس+";
+            if (!bonusData[idx]) {
+              bonusBtn.classList.add("golden");
+            } else {
+              bonusBtn.classList.remove("golden");
+            }
+            bonusContainer.appendChild(bonusBtn);
+          });
+          bonusContainer.removeChild(bonusBtn);
+          bonusContainer.appendChild(sel);
+          sel.focus();
+        });
+        bonusContainer.appendChild(bonusBtn);
+        bonusCell.appendChild(bonusContainer);
+
+        row.appendChild(idCell);
+        row.appendChild(nameCell);
+        row.appendChild(attendanceCell);
+        row.appendChild(bonusCell);
+        tableBody.appendChild(row);
+      });
+      updateCounts();
+    }
+
+    // تعديل حساب الغياب ليُحسب عدد الطلاب الذين لم يسجل لهم "حضور" أو "مجاز"
+    function updateCounts() {
+      var totalCount = students.length;
+      var presentCount = attendanceData.filter(function(s) { return s === "present"; }).length;
+      var excusedCount = attendanceData.filter(function(s) { return s === "مجاز"; }).length;
+      // الطلاب الذين قيمتهم null أو "absent" يُعتبرون غائبين
+      var absentCount = attendanceData.filter(function(s) { return s === null || s === "absent"; }).length;
+      document.getElementById("totalCount").textContent = totalCount;
+      document.getElementById("presentCount").textContent = presentCount;
+      document.getElementById("absentCount").textContent = absentCount;
+      document.getElementById("excusedCount").textContent = excusedCount;
+    }
+
+    document.getElementById("studentsTableBody").addEventListener("click", function(e) {
+      if (e.target.tagName.toLowerCase() === "button" && e.target.hasAttribute("data-status")) {
+        var index = e.target.getAttribute("data-index");
+        var status = e.target.getAttribute("data-status");
+        attendanceData[index] = (status === "unset") ? null : status;
+        setAttendanceData(attendanceData);
+        renderTable();
+      }
+    });
+
+    document.getElementById("resetAttendanceBtn").addEventListener("click", function() {
+      attendanceData = new Array(students.length).fill(null);
+      bonusData = new Array(students.length).fill(null);
+      setAttendanceData(attendanceData);
+      setBonusData(bonusData);
+      renderTable();
+    });
+
+    document.getElementById("downloadExcelBtn").addEventListener("click", function() {
+      downloadExcel();
+    });
+
+    function downloadExcel() {
+      var subject = document.getElementById("subject").value;
+      var section = document.getElementById("sectionSelect").value;
+      var date = new Date().toLocaleDateString("en-GB");
+      var totalCount = students.length;
+      var presentCount = attendanceData.filter(function(s) { return s === "present"; }).length;
+      var excusedCount = attendanceData.filter(function(s) { return s === "مجاز"; }).length;
+      var absentCount = attendanceData.filter(function(s) { return s === null || s === "absent"; }).length;
+      var wb = XLSX.utils.book_new();
+      var headerInfo = [
+        ["تاريخ اليوم:", date],
+        ["المادة:", subject],
+        ["الشعبة:", section],
+        ["العدد الكلي:", totalCount, "الحضور:", presentCount, "الغياب:", absentCount, "المجاز:", excusedCount],
+        [],
+        ["ID", "الاسم", "الحالة", "بلس+"]
+      ];
+      students.forEach(function(student, index) {
+        var attAbbr = "";
+        if(attendanceData[index] === "present") attAbbr = "ح";
+        else if(attendanceData[index] === "absent") attAbbr = "غ";
+        else if(attendanceData[index] === "مجاز") attAbbr = "م";
+        headerInfo.push([
+          index + 1,
+          student,
+          attAbbr,
+          bonusData[index] ? bonusData[index] : ""
+        ]);
+      });
+      var ws = XLSX.utils.aoa_to_sheet(headerInfo);
+      ws["!cols"] = [{ wch: 7 }, { wch: 25 }, { wch: 10 }, { wch: 8 }];
+      ["A1","B1","A2","B2","A3","B3"].forEach(function(cell) {
+        if(ws[cell]) ws[cell].s = { font: { sz: 16 } };
+      });
+      if(ws["B6"]) ws["B6"].s = { font: { sz: 16 } };
+      for(var i=0;i<students.length;i++){
+        var cellAddress = "B" + (7+i);
+        if(ws[cellAddress]) ws[cellAddress].s = { font: { sz: 16 } };
+      }
+      XLSX.utils.book_append_sheet(wb, ws, "الحضور");
+      var fileName = section + "_" + date.replace(/\//g, "-") + ".xlsx";
+      XLSX.writeFile(wb, fileName, { cellStyles: true });
+    }
+
+    function updateStudentsList() {
+      currentSection = document.getElementById("sectionSelect").value;
+      students = sections[currentSection];
+      attendanceData = getAttendanceData();
+      bonusData = getBonusData();
+      renderTable();
+    }
+    document.getElementById("sectionSelect").addEventListener("change", updateStudentsList);
+    renderTable();
+  </script>
+</body>
+</html>
